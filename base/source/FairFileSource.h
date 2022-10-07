@@ -82,7 +82,6 @@ class FairFileSource : public FairSource
             fRootFile->Close();
         }
     }
-    /**Set the input tree when running on PROOF worker*/
     void SetInTree(TTree* tempTree);
     TObjArray* GetListOfFolders() { return fListFolder; }
     TFolder* GetBranchDescriptionFolder() { return fCbmroot; }
