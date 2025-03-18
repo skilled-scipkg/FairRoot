@@ -630,8 +630,8 @@ void FairMCApplication::InitOnWorker()
 
     fRootManager->InitSink();
 
-    // Cache thread-local gMC
-    fMC = gMC;
+    // Cache thread-local TVirtualMC::GetMC()
+    fMC = TVirtualMC::GetMC();
 
     // Set data to MC
     fMC->SetStack(fStack);
@@ -800,10 +800,10 @@ void FairMCApplication::FinishEvent()
     // ---
     LOG(debug) << "[" << fRootManager->GetInstanceId()
                << " FairMCMCApplication::FinishEvent: " << fMCEventHeader->GetEventID() << " (MC "
-               << gMC->CurrentEvent() << ")";
-    if (gMC->IsMT()
-        && fRun->GetSink()->GetSinkType() == kONLINESINK) {   // fix the rare case when running G4 multithreaded on MQ
-        fMCEventHeader->SetEventID(gMC->CurrentEvent() + 1);
+               << TVirtualMC::GetMC()->CurrentEvent() << ")";
+    if (TVirtualMC::GetMC()->IsMT() && fRun->GetSink()->GetSinkType() == kONLINESINK)
+    {   // fix the rare case when running G4 multithreaded on MQ
+        fMCEventHeader->SetEventID(TVirtualMC::GetMC()->CurrentEvent() + 1);
     }
 
     // --> Fill the stack output array
@@ -848,7 +848,7 @@ void FairMCApplication::FinishEvent()
 
     // Store information about runtime for one event and memory consuption
     // for later usage.
-    if ((FairRunSim::Instance()->IsRunInfoGenerated()) && !gMC->IsMT()) {
+    if (fRun->IsRunInfoGenerated() && !TVirtualMC::GetMC()->IsMT()) {
         fRunInfo.StoreInfo();
     }
 }
