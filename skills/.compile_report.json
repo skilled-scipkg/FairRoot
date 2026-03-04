@@ -1,0 +1,315 @@
+{
+  "compile_memory_path": "skills/.evidence/memory.md",
+  "compiled_package_id": "fairroot",
+  "evidence": {
+    "core_skills": [
+      "fairroot-build-and-install",
+      "fairroot-simulation-workflows",
+      "fairroot-examples-and-tutorials",
+      "fairroot-inputs-and-modeling",
+      "fairroot-getting-started",
+      "fairroot-templates"
+    ],
+    "evidence_dir": "skills/.evidence",
+    "files": [
+      "skills/.evidence/fairroot-build-and-install.md",
+      "skills/.evidence/fairroot-simulation-workflows.md",
+      "skills/.evidence/fairroot-examples-and-tutorials.md",
+      "skills/.evidence/fairroot-inputs-and-modeling.md",
+      "skills/.evidence/fairroot-getting-started.md",
+      "skills/.evidence/fairroot-templates.md"
+    ]
+  },
+  "generation": {
+    "docs_only": false,
+    "generator_script": "sci-skills-generator/scripts/generate_skills_folder.py",
+    "max_skills": 30,
+    "return_code": 0,
+    "status": "ok"
+  },
+  "mode": "compile",
+  "pass_scope_diffs": {
+    "pass_2": {
+      "added": [
+        "skills/.evidence/memory.md"
+      ],
+      "changed": [
+        "skills/.evidence/memory.md",
+        "skills/fairroot-build-and-install/SKILL.md",
+        "skills/fairroot-examples-and-tutorials/SKILL.md",
+        "skills/fairroot-getting-started/SKILL.md",
+        "skills/fairroot-index/SKILL.md",
+        "skills/fairroot-inputs-and-modeling/SKILL.md",
+        "skills/fairroot-simulation-workflows/SKILL.md",
+        "skills/fairroot-templates/SKILL.md"
+      ],
+      "deleted": [],
+      "modified": [
+        "skills/fairroot-build-and-install/SKILL.md",
+        "skills/fairroot-examples-and-tutorials/SKILL.md",
+        "skills/fairroot-getting-started/SKILL.md",
+        "skills/fairroot-index/SKILL.md",
+        "skills/fairroot-inputs-and-modeling/SKILL.md",
+        "skills/fairroot-simulation-workflows/SKILL.md",
+        "skills/fairroot-templates/SKILL.md"
+      ]
+    },
+    "pass_3": {
+      "added": [
+        "skills/.compile_report.json"
+      ],
+      "changed": [
+        "skills/.compile_report.json",
+        "skills/.evidence/memory.md",
+        "skills/fairroot-build-and-install/references/doc_map.md",
+        "skills/fairroot-build-and-install/references/source_map.md",
+        "skills/fairroot-doxygen/SKILL.md",
+        "skills/fairroot-doxygen/references/doc_map.md",
+        "skills/fairroot-doxygen/references/source_map.md",
+        "skills/fairroot-examples-and-tutorials/references/doc_map.md",
+        "skills/fairroot-examples-and-tutorials/references/source_map.md",
+        "skills/fairroot-getting-started/SKILL.md",
+        "skills/fairroot-getting-started/references/doc_map.md",
+        "skills/fairroot-getting-started/references/source_map.md",
+        "skills/fairroot-inputs-and-modeling/SKILL.md",
+        "skills/fairroot-inputs-and-modeling/references/doc_map.md",
+        "skills/fairroot-inputs-and-modeling/references/source_map.md",
+        "skills/fairroot-simulation-workflows/SKILL.md",
+        "skills/fairroot-simulation-workflows/references/doc_map.md",
+        "skills/fairroot-simulation-workflows/references/source_map.md",
+        "skills/fairroot-templates/SKILL.md",
+        "skills/fairroot-templates/references/doc_map.md",
+        "skills/fairroot-templates/references/source_map.md"
+      ],
+      "deleted": [],
+      "modified": [
+        "skills/.evidence/memory.md",
+        "skills/fairroot-build-and-install/references/doc_map.md",
+        "skills/fairroot-build-and-install/references/source_map.md",
+        "skills/fairroot-doxygen/SKILL.md",
+        "skills/fairroot-doxygen/references/doc_map.md",
+        "skills/fairroot-doxygen/references/source_map.md",
+        "skills/fairroot-examples-and-tutorials/references/doc_map.md",
+        "skills/fairroot-examples-and-tutorials/references/source_map.md",
+        "skills/fairroot-getting-started/SKILL.md",
+        "skills/fairroot-getting-started/references/doc_map.md",
+        "skills/fairroot-getting-started/references/source_map.md",
+        "skills/fairroot-inputs-and-modeling/SKILL.md",
+        "skills/fairroot-inputs-and-modeling/references/doc_map.md",
+        "skills/fairroot-inputs-and-modeling/references/source_map.md",
+        "skills/fairroot-simulation-workflows/SKILL.md",
+        "skills/fairroot-simulation-workflows/references/doc_map.md",
+        "skills/fairroot-simulation-workflows/references/source_map.md",
+        "skills/fairroot-templates/SKILL.md",
+        "skills/fairroot-templates/references/doc_map.md",
+        "skills/fairroot-templates/references/source_map.md"
+      ]
+    }
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 2,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 3,
+      "return_code": 0,
+      "status": "ok"
+    }
+  ],
+  "profile": {
+    "docs_dirs": [
+      "doxygen"
+    ],
+    "docs_only": false,
+    "notes": [
+      "Top-level markdown docs (for example README.md and CHANGELOG.md) are in repo root and outside directory-only docs_dirs.",
+      "Dry-run generation succeeds deterministically with explicit docs/tutorial/test/source roots from this profile.",
+      "Patched sci-skills-generator/scripts/generate_skills_folder.py to fix f-string backslash SyntaxError during generator execution."
+    ],
+    "package_name": "fairroot",
+    "profile_path": "skills/.compile_profile.json",
+    "profile_source": "file",
+    "source_dirs": [
+      "fairroot"
+    ],
+    "test_dirs": [
+      "tests",
+      "fairroot/tools/tests"
+    ],
+    "tutorial_dirs": [
+      "examples",
+      "templates"
+    ],
+    "warnings": []
+  },
+  "project_root": "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/fairroot-fairroot",
+  "run_id": "compile_20260304T083947881421Z",
+  "skill_plan": {
+    "available_skill_ids": [
+      "fairroot-build-and-install",
+      "fairroot-doxygen",
+      "fairroot-examples-and-tutorials",
+      "fairroot-getting-started",
+      "fairroot-index",
+      "fairroot-inputs-and-modeling",
+      "fairroot-simulation-workflows",
+      "fairroot-templates"
+    ],
+    "core_skill_ids": [
+      "fairroot-build-and-install",
+      "fairroot-simulation-workflows",
+      "fairroot-examples-and-tutorials",
+      "fairroot-inputs-and-modeling",
+      "fairroot-getting-started",
+      "fairroot-templates"
+    ],
+    "deferred_gaps": [
+      "Root-level docs are not captured by directory-only docs_dirs; consider optional root-doc ingestion support later.",
+      "One-doc topics (for example doxygen/templates) may need consolidation into advanced-topics after pass-2 enrichment."
+    ],
+    "goal": "Generate and refine high-impact FairRoot docs-first routing skills in pass 2, then audit coverage and gaps in pass 3.",
+    "mode": "compile",
+    "priority_skills": [
+      {
+        "action": "refresh",
+        "must_cover": [
+          "Route requests across build/install, simulation workflows, modeling, examples/templates, and troubleshooting",
+          "Enforce docs-first flow and source escalation only when docs are insufficient"
+        ],
+        "reason": "Index routing quality is the main control point for correct topic selection across this broad framework.",
+        "skill_id": "fairroot-index",
+        "source_hints": [
+          "README.md",
+          "doxygen/README.md",
+          "examples",
+          "tests",
+          "fairroot/tools/tests",
+          "fairroot"
+        ]
+      },
+      {
+        "action": "refresh",
+        "must_cover": [
+          "CMake configure/build/install path",
+          "Environment variables and dependency expectations",
+          "How to run test targets after build"
+        ],
+        "reason": "Build/install issues are likely first-contact tasks and have direct productivity impact.",
+        "skill_id": "fairroot-build-and-install",
+        "source_hints": [
+          "README.md",
+          "CMakeLists.txt",
+          "tests/CMakeLists.txt"
+        ]
+      },
+      {
+        "action": "refresh",
+        "must_cover": [
+          "End-to-end run flow from macros/examples",
+          "Output handling and event-display entrypoints",
+          "Minimal validation checkpoints from tests"
+        ],
+        "reason": "Core user value is simulation/reconstruction workflows; this skill should hold canonical run patterns.",
+        "skill_id": "fairroot-simulation-workflows",
+        "source_hints": [
+          "examples/simulation",
+          "examples/common",
+          "tests/examples/simulation",
+          "fairroot/tools/tests",
+          "fairroot/base",
+          "fairroot/generators"
+        ]
+      },
+      {
+        "action": "refresh",
+        "must_cover": [
+          "Map representative examples by use case",
+          "Identify smallest runnable tutorial patterns",
+          "Cross-link templates for project bootstrapping"
+        ],
+        "reason": "Executable examples and templates are the fastest path for new users and should be curated into concise playbooks.",
+        "skill_id": "fairroot-examples-and-tutorials",
+        "source_hints": [
+          "examples",
+          "templates",
+          "tests/examples"
+        ]
+      },
+      {
+        "action": "refresh",
+        "must_cover": [
+          "Geometry/material/input configuration entrypoints",
+          "Where model parameters are defined and consumed",
+          "Pointers to relevant validation tests"
+        ],
+        "reason": "Detector/geometry/input modeling choices heavily affect correctness and are frequent expert questions.",
+        "skill_id": "fairroot-inputs-and-modeling",
+        "source_hints": [
+          "examples/common/geometry",
+          "examples/common/gconfig",
+          "fairroot/geobase",
+          "fairroot/parbase",
+          "tests/geobase"
+        ]
+      },
+      {
+        "action": "audit",
+        "must_cover": [
+          "Check skill count cap and topic redundancy",
+          "Ensure each topic has doc_map/source_map and accurate path references",
+          "Record uncovered or weakly documented areas as deferred gaps"
+        ],
+        "reason": "Final pass must verify generated skill set quality, cap compliance, and unresolved coverage risks.",
+        "skill_id": "fairroot-templates",
+        "source_hints": [
+          "skills",
+          "skills/.evidence/memory.md",
+          "skills/.compile_profile.json"
+        ]
+      }
+    ],
+    "version": 1,
+    "warnings": []
+  },
+  "skill_plan_path": "skills/.evidence/skill_plan.json",
+  "validation": {
+    "core_skills_checked": [
+      "fairroot-templates",
+      "fairroot-simulation-workflows",
+      "fairroot-inputs-and-modeling",
+      "fairroot-getting-started",
+      "fairroot-examples-and-tutorials",
+      "fairroot-doxygen"
+    ],
+    "docs_only": false,
+    "errors": [
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/fairroot-fairroot/skills/fairroot-getting-started/references/source_map.md: broken path references: ./startMQExLmd.sh"
+    ],
+    "index_skills": [
+      "fairroot-index"
+    ],
+    "missing_planned_skills": [],
+    "ok": false,
+    "planned_skill_ids": [
+      "fairroot-index",
+      "fairroot-build-and-install",
+      "fairroot-simulation-workflows",
+      "fairroot-examples-and-tutorials",
+      "fairroot-inputs-and-modeling",
+      "fairroot-templates"
+    ],
+    "previous_source_inventory": {},
+    "skills_total": 8,
+    "source_inventory": {},
+    "source_links_total": 138,
+    "topic_skills": 7,
+    "warnings": []
+  }
+}
